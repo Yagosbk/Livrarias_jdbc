@@ -2,7 +2,7 @@ package Models;
 
 public class Orcamento {
 
-    String data_orcamento;
+    int data_orcamento;
     String nome_comprador;
     String cpf_orcamento;
     String cnpj_orcamento;

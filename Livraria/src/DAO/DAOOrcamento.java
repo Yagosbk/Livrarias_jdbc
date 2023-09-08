@@ -2,12 +2,6 @@ package DAO;
 
 import Models.ItemOrcamento;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.sql.*;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class DAOOrcamento {
 
@@ -17,7 +11,7 @@ public class DAOOrcamento {
         ResultSet resultSet = null;
         ;
         try {
-            connection = DriverManager.getConnection("URL", "root", "root");
+            connection = DriverManager.getConnection("URL", "root", "toor");
             selectStmt = connection.createStatement();
             ResultSet rs = selectStmt.executeQuery("SELECT * FROM livros WHERE nome = '" + entrada + "' OR isbn = '" + entrada + "'");
             while (rs.next()) {
